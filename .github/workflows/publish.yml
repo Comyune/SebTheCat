@@ -22,7 +22,7 @@ jobs:
       with: { hugo-version: '0.72.0', extended: true }
 
     - name: Build
-      run: hugo --minify
+      run: hugo --debug --log --verbose --verboseLog
 
     - name: S3 Sync
       uses: jakejarvis/s3-sync-action@v0.5.1
