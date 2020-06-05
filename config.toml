@@ -4,6 +4,7 @@ title = "Seb The Cat"
 theme = "bootstrap4"
 paginate = 10
 summaryLength = 50
+uglyurls = true
 copyright = "&copy; Copyright Comyune Technologies Ltd, 2020"
 #googleAnalytics = "UA-123-45"
 #disqusShortname = "XYW"
