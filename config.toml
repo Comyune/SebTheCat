@@ -1,4 +1,4 @@
-baseURL = "http://www.sebthecat.com/"
+baseURL = "https://www.sebthecat.com/"
 languageCode = "en-us"
 title = "Seb The Cat"
 theme = "bootstrap4"
