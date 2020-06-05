@@ -1,8 +1,20 @@
----
-title: "Developing Seb the Cat Blog"
-date: 2020-06-04T15:27:15+01:00
-draft: false
----
++++
+title = "Developing Seb the Cat Blog"
+description = "Using Hugo static site generator to build a blog hosted on AWS."
+date = "2020-06-04T15:27:15+01:00"
+menu = "main"
+tags = [
+  "hugo",
+  "devops",
+  "cicd",
+  "aws",
+  "github",
+  "actions"
+]
+categories = [
+  "SebTheCat.com",
+]
++++
 
 ## Seb builds his blog using Hugo
 
