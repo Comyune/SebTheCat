@@ -1,4 +1,4 @@
-baseURL = "http://sebthecat.com/"
+baseURL = "http://www.sebthecat.com/"
 languageCode = "en-us"
 title = "Seb The Cat"
 theme = "bootstrap4"
@@ -6,8 +6,8 @@ paginate = 10
 summaryLength = 50
 uglyurls = true
 copyright = "&copy; Copyright Comyune Technologies Ltd, 2020"
-#googleAnalytics = "UA-123-45"
-#disqusShortname = "XYW"
+googleAnalytics = "UA-168657035-1"
+disqusShortname = "seb-the-cats-blog"
 
 [permalinks]
   posts = "/:year/:month/:title/"

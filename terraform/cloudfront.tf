@@ -23,6 +23,13 @@ resource "aws_cloudfront_distribution" "sebthecat_blog" {
   origin {
     domain_name = aws_s3_bucket.sebthecat_blog.bucket_regional_domain_name
     origin_id = local.s3_blog_origin_id
+
+    custom_origin_config {
+      http_port = 80
+      https_port = 443
+      origin_protocol_policy = "http-only"
+      origin_ssl_protocols = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+    }
   }
 
   default_cache_behavior {
@@ -35,7 +42,7 @@ resource "aws_cloudfront_distribution" "sebthecat_blog" {
     max_ttl = 86400
 
     forwarded_values {
-      query_string = true
+      query_string = false
       cookies { forward = "none" }
     }
   }
@@ -46,6 +53,7 @@ resource "aws_cloudfront_distribution" "sebthecat_blog" {
   }
 
   tags = {
+    Name = "SebTheCat.com Distribution"
     Project = "sebthecat"
     Environment = "production"
   }
