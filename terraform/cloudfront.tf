@@ -12,6 +12,7 @@ resource "aws_cloudfront_distribution" "sebthecat_blog" {
   default_root_object = "index.html"
   aliases = ["sebthecat.com", "www.sebthecat.com"]
   price_class = "PriceClass_100"
+  wait_for_deployment = false
 
   restrictions {
     geo_restriction {
@@ -36,7 +37,8 @@ resource "aws_cloudfront_distribution" "sebthecat_blog" {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = local.s3_blog_origin_id
-    viewer_protocol_policy = "allow-all"
+    viewer_protocol_policy = "redirect-to-https"
+    compress = true
     min_ttl = 60
     default_ttl = 3600
     max_ttl = 86400
