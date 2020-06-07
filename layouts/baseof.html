@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" {{ if or (eq .Lang "ar") (eq .Lang "fa") }}dir="rtl"{{ end }}>
+  <head>{{ partial "html-head.html" . }}</head>
+
+  <body class="home">
+    {{ block "masthead" . }}{{ partial "masthead.html" . }}{{ end }}
+    {{ block "header" . }}{{ partial "header-homepage.html" . }}{{ end }}
+
+    {{ block "body" . }}
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 blog-main">
+            {{ block "main" . }}
+            {{ end }}
+          </div>
+
+          {{ partial "sidebar.html" . }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+  </body>
+</html>
