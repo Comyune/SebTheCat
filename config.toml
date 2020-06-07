@@ -9,6 +9,17 @@ copyright = "&copy; Copyright Comyune Technologies Ltd, 2020"
 googleAnalytics = "UA-168657035-1"
 disqusShortname = "seb-the-cats-blog"
 
+[related]
+threshold = 10
+includeNewer = false
+toLower = true
+[[related.indices]]
+name = "keywords"
+weight = 100
+[[related.indices]]
+name = "date"
+weight = 10
+
 [permalinks]
   posts = "/:year/:month/:title/"
   page = "/:slug/"
