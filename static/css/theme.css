@@ -160,6 +160,9 @@ body.home #twitch-embed {
   width: 420px;
   height: 240px;
 }
+#twitch-embed iframe {
+  box-shadow: 2px -2px 3px rgba(0,0,0,0.4);
+}
 
 .blog-masthead nav a {
   color: var(--white);
@@ -188,4 +191,33 @@ hr {
 
 .sidebar-module ol li {
   margin-bottom: 0.5em;
+}
+
+.sidebar-module.tags a {
+  padding: 0.2em; margin: 0.2em;
+  font-size: 0.8em;
+  word-break: keep-all;
+  min-width: 49%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--light-background);
+  opacity: 0.5;
+}
+.sidebar-module.tags a:hover {
+  opacity: 1;
+}
+.sidebar-module.tags a .count{
+  color: var(--gray);
+  opacity: 0.8;
+}
+.sidebar-module.tags a.all {
+  display: inline-block;
+  clear: left;
+  color: var(--dark-background);
+  background: 0;
+}
+
+code {
+  color: #a81e6c;
 }

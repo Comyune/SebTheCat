@@ -2,7 +2,6 @@
 title = "Bought a New PC"
 description = "Finally upgraded my setup. Thanks Chillblast.com!"
 date = "2020-06-07T13:27:15+01:00"
-menu = "main"
 tags = [
   "brag",
   "pcmasterrace",

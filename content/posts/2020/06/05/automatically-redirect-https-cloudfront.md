@@ -2,7 +2,6 @@
 title = "Automatically Redirect to HTTPS in Cloudfront"
 description = "Don't waste money redirecting to https with an AWS lambda."
 date = "2020-06-07T11:27:15+01:00"
-menu = "main"
 tags = [
   "devops",
   "terraform",
