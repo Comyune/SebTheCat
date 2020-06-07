@@ -16,8 +16,6 @@ categories = [
 ]
 +++
 
-## Seb builds his blog using Hugo
-
 {{< twitch video="634741443" >}}
 
 <!--more-->
