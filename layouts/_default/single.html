@@ -1,5 +1,6 @@
 {{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
 
+
 {{ define "schema-dot-org" }}
 <script type="application/ld+json">
 {
@@ -49,39 +50,50 @@
 </script>
 {{ end }}
 
+
 {{ define "main" }}
-{{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
+  {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
 
-<article class="blog-post">
-  {{ .Content }}
+  <article class="blog-post">
+    {{ .Content }}
 
-  {{ if .IsTranslated }}
-  <h4>{{ i18n "translations" }}</h4>
-  <ul>
-    {{ range .Translations }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}</a>
-    </li>
+    {{ if .IsTranslated }}
+    <h4>{{ i18n "translations" }}</h4>
+    <ul>
+      {{ range .Translations }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}</a>
+      </li>
+      {{ end }}
+    </ul>
     {{ end }}
-  </ul>
-  {{ end }}
 
-  {{ if or (ne ($.Param "sharingicons") false) (.Site.DisqusShortname) }}
-  <hr>
-  <footer>
+    <hr>
 
-  {{ if (ne ($.Param "sharingicons") false) }}
-  {{ partial "sharing-icons.html" . }}
-  {{ end }}
+    <section class="related">
+      {{ $related := .Site.Pages.Related . | first 10 }}
+      {{ with $related }}
+        <h3>See Also</h3>
 
-  {{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
-  {{ template "_internal/disqus.html" . }}
-  {{ end }}
-  </footer>
-  {{ end }}
+        <ul>
+          {{ range . }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a><br />
+              <p></p>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </section>
+    
+    <hr />
 
-</article> <!-- /.blog-post -->
+    <footer>
+      {{ partial "sharing-icons.html" . }}
 
+      {{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
+        {{ template "_internal/disqus.html" . }}
+      {{ end }}
+    </footer>
+  </article>
 {{ end }}
-
-{{- /* vim: set ts=2 sw=2 et: */}}
