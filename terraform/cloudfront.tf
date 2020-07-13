@@ -16,8 +16,7 @@ resource "aws_cloudfront_distribution" "sebthecat_blog" {
 
   restrictions {
     geo_restriction {
-      restriction_type = "whitelist"
-      locations = ["US", "GB"]
+      restriction_type = "none"
     }
   }
 
