@@ -6,12 +6,6 @@
   </section>
   {{ end }}
 
-  {{ partial "tag-menu.html" . }}
-
-  {{ if .Site.Params.sidebar }}
-    {{ partialCached "recent.html" .}}
-  {{ end }}
-
   {{ with .Site.Menus.sidebar }}
   <section class="sidebar-module">
     <h4>{{ i18n "links" }}</h4>
@@ -22,4 +16,10 @@
     </ol>
   </section>
   {{ end }}
+
+  {{ partial "tag-menu.html" . }}
+
+  {{ if .Site.Params.sidebar }}
+    {{ partialCached "recent.html" .}}
+  {{ end }}  
 </aside>
