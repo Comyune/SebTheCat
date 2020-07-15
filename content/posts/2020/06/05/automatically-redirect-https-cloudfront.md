@@ -8,9 +8,6 @@ tags = [
   "aws",
   "cloudfront",
   "lambda",
-  "http",
-  "https",
-  "policy",
 ]
 categories = [
   "Tips",

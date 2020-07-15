@@ -8,7 +8,6 @@ tags = [
   "cicd",
   "aws",
   "github",
-  "actions"
 ]
 categories = [
   "SebTheCat.com",

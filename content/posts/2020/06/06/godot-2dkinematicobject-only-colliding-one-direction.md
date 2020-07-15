@@ -3,11 +3,7 @@ title = "Godot 2DKinematicObject Only Colliding in One Direction"
 description = "How to fix 2D collisions in Godot only operating in one direction."
 date = "2020-06-07T13:27:15+01:00"
 tags = [
-  "2d",
   "godot",
-  "collision",
-  "problem",
-  "phyics",
   "gdscript",
   "gamedev",
 ]

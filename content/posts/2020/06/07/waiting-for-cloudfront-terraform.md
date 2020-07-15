@@ -7,10 +7,6 @@ tags = [
   "terraform",
   "aws",
   "cloudfront",
-  "distribution",
-  "waiting",
-  "slow",
-  "stuck",
 ]
 categories = [
   "Tips",

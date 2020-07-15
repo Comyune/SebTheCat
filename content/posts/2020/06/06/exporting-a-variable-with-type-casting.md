@@ -3,11 +3,8 @@ title = "Exporting a Variable with Type-Casting"
 description = "Be careful, Godot only allows native types to be exported to the GUI."
 date = "2020-06-07T13:27:15+01:00"
 tags = [
-  "howto",
   "godot",
   "types",
-  "casting",
-  "export",
   "gdscript",
 ]
 categories = [

@@ -8,7 +8,6 @@ tags = [
   "vuejs",
   "frontend",
   "javascript",
-  "productivity",
 ]
 categories = [
   "Streams",
