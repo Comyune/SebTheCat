@@ -25,16 +25,16 @@ weight = 10
   page = "/:slug/"
 
 [[menu.sidebar]]
+  name = "DevBrett"
+  url = "https://devbrett.com"
+
+[[menu.sidebar]]
   name = "Youtube"
   url = "https://www.youtube.com/channel/UCnKdHNJCqjXIWB5-U7PTazQ"
 
 [[menu.sidebar]]
   name = "Twitch"
   url = "https://twitch.tv/comyune"
-
-[[menu.sidebar]]
-  name = "DevBrett"
-  url = "https://devbrett.com"
 
 [[menu.navbar]]
   name = "Youtube"
@@ -76,7 +76,7 @@ weight = 10
     num_recent_posts = 20
 
   [markup.goldmark.renderer]
-  unsafe = true
+    unsafe = true
 
   [params.social]
     twitter = "sebthecat"
