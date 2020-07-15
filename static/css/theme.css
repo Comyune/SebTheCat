@@ -1,5 +1,5 @@
 :root {
-  --black: #000000;
+  --black: #000001;
   --burgundy: #333e3e;
   --dark-background: #332e2e;
   --light-background: #807678;
@@ -8,21 +8,24 @@
   --yellow: #FFD400;
   --purple: #7e5c8a;
   --red: #c5623e;
+  --dark-blue: #4e5275;
   --light-green: #ebfff0;
   --light-blue: #D9f0ff;
 }
 
 a {
-  color: var(--red);
+  color: var(--dark-blue);
 }
 a:hover {
   color: var(--black);
+  text-decoration: none;
 }
 
 html, body {
   font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   color: var(--burgundy);
   background: var(--gray);
+  line-height: 1.75em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -78,7 +81,7 @@ h2.blog-post-title {
   color: var(--white);
 }
 .blog-post-meta a:hover {
-  background: var(--red);
+  color: var(--black) !important;
   text-decoration: none;
 }
 
@@ -87,7 +90,7 @@ h2.blog-post-title {
 }
 
 article p {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 div.highlight > pre {
   overflow: hidden;
@@ -97,7 +100,9 @@ div.highlight > pre {
 div.highlight > pre:hover {
   overflow: auto;
 }
-.blog-post { margin-bottom: 3rem; }
+.blog-post {
+  margin-bottom: 1.5rem;
+}
 
 .blog-header .blog-post-meta{
   font-size: 0.7em;
@@ -106,6 +111,7 @@ div.highlight > pre:hover {
 
 .blog-main {
   overflow: hidden;
+  padding-bottom: 8rem;
 }
 
 .blog-main .blog-post-meta {
@@ -133,6 +139,7 @@ body.home .blog-header {
 
 section.sidebar-module {
   padding-top: 0.2em;
+  padding-bottom: 2rem;
 }
 
 .blog-title {
@@ -194,10 +201,10 @@ hr {
 }
 
 .sidebar-module.tags a {
-  padding: 0.2em; margin: 0.2em;
+  display: inline-block;
+  padding: 0.1em 0.5em; margin: 0.4em 0.2em;
   font-size: 0.8em;
   word-break: keep-all;
-  min-width: 49%;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--white);
@@ -209,6 +216,7 @@ hr {
 }
 .sidebar-module.tags a .count{
   color: var(--gray);
+  margin-left: 0.25em;
   opacity: 0.8;
 }
 .sidebar-module.tags a.all {
@@ -217,7 +225,51 @@ hr {
   color: var(--dark-background);
   background: 0;
 }
+.sidebar-module.tags {
+}
+.sidebar-module.tags h4 {
+  width: 100%;
+}
 
 code {
-  color: #a81e6c;
+  color: #880e4c;
 }
+
+article {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+article h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+article h3 {
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.inline-svg {
+  display: inline-block;
+  height: 1.15rem;
+  width: 1.15rem;
+  top: -0.15rem;
+  margin: 0 0.25rem;
+  position: relative;
+}
+
+aside.blog-sidebar {
+  padding-top: 1.5rem;
+}
+
+/*
+I'm willing to risk a lawsuit, because these things
+are annoying as hell and are breaking the whole
+internet experience. I use Google Analytics like
+everyone else, I'm not tracking you... I'm just trying
+to figure out what content people find interesting
+so I can focus on things that help people.
+So kill me.
+*/
+#cookie-notification { display: none; } 
