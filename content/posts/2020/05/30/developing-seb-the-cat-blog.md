@@ -15,10 +15,17 @@ categories = [
 ]
 +++
 
-{{< twitch video="634741443" >}}
+Today we streamed the creation of the SebTheCat.com blog.
+
+Source code (including Terraform infrastructure setup) is available here:
+https://github.com/Comyune/SebTheCat
 
 <!--more-->
 
 ### Hugo Framework
 
+We chose the Hugo framework to develop our blog because it is one of
+the fastest and simplest ways to build a static website.
+
+More information here:
 https://gohugo.io/
