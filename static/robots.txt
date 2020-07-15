@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://sebthecat.com/sitemap.xml
+Sitemap: http://www.sebthecat.com/sitemap.xml
