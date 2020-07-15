@@ -10,8 +10,8 @@ googleAnalytics = "UA-168657035-1"
 disqusShortname = "seb-the-cats-blog"
 
 [related]
-threshold = 10
-includeNewer = false
+threshold = 5
+includeNewer = true
 toLower = true
 [[related.indices]]
 name = "keywords"
@@ -33,10 +33,6 @@ weight = 10
   url = "https://twitch.tv/comyune"
 
 [[menu.sidebar]]
-  name = "Comyune"
-  url = "https://comyune.com"
-
-[[menu.sidebar]]
   name = "DevBrett"
   url = "https://devbrett.com"
 
@@ -47,10 +43,6 @@ weight = 10
 [[menu.navbar]]
   name = "Twitch"
   url = "https://twitch.tv/comyune"
-
-[[menu.navbar]]
-  name = "Comyune"
-  url = "https://comyune.com"
 
 # Theme variables
 [params]
@@ -66,11 +58,11 @@ weight = 10
   # required for your site in the European Union. Set the parameter below to a
   # page where the user can get more information about cookies, either on your
   # site or externally, for example:
-  #cookie_consent_info_url = "/cookie-information/"
-  #cookie_consent_info_url = "http://cookiesandyou.com"
+  # cookie_consent_info_url = "/cookie-information/"
+  # cookie_consent_info_url = "http://cookiesandyou.com"
 
   # show sharing icons on pages/posts (default: true)
-  sharingicons = true
+  sharingicons = false # true
 
   # Display post summaries instead of content in list templates (default: true)
   truncate = false
@@ -80,13 +72,13 @@ weight = 10
   #disable_sri = false
 
   [params.sidebar]
-    about = "Seb is a feline tussled by the world who has run away from his human family. Making ends meet by building a little kitty empire on the web."
-    num_recent_posts = 10
+    about = "Seb is a feline tussled by the world. He has run away from his human family and making ends meet by teaching software and art on the web."
+    num_recent_posts = 20
+
+  [markup.goldmark.renderer]
+  unsafe = true
 
   [params.social]
-    # Optional, used for attribution in Twitter cards (ideally not a person
-    # for example: nytimes, flickr, NatGeo, etc).
-    # See: https://dev.twitter.com/cards/types/summary-large-image
     twitter = "sebthecat"
 
 
