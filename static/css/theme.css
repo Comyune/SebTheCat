@@ -263,6 +263,21 @@ aside.blog-sidebar {
   padding-top: 1.5rem;
 }
 
+article blockquote {
+  padding: 0.5rem 1rem 0;
+  background: rgba(0,0,0,0.1);
+}
+article blockquote:before {
+  content: open-quote;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+article blockquote:after {
+  content: close-quote;
+  display: block;
+  text-align: right;
+}
+
 /*
 I'm willing to risk a lawsuit, because these things
 are annoying as hell and are breaking the whole
