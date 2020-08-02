@@ -30,19 +30,19 @@ weight = 10
 
 [[menu.sidebar]]
   name = "Youtube"
-  url = "https://www.youtube.com/channel/UCnKdHNJCqjXIWB5-U7PTazQ"
+  url = "https://www.youtube.com/channel/UCVQ2Rt-GlX3ptQ94GUtulmQ"
 
 [[menu.sidebar]]
   name = "Twitch"
-  url = "https://twitch.tv/comyune"
+  url = "https://twitch.tv/sebthecat_com"
 
 [[menu.navbar]]
   name = "Youtube"
-  url = "https://www.youtube.com/channel/UCnKdHNJCqjXIWB5-U7PTazQ"
+  url = "https://www.youtube.com/channel/UCVQ2Rt-GlX3ptQ94GUtulmQ"
 
 [[menu.navbar]]
   name = "Twitch"
-  url = "https://twitch.tv/comyune"
+  url = "https://twitch.tv/sebthecat_com"
 
 # Theme variables
 [params]
@@ -79,12 +79,4 @@ weight = 10
     unsafe = true
 
   [params.social]
-    twitter = "sebthecat"
-
-
-
-
-
-
-
-
+    twitter = "_SebTheCat_"
