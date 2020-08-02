@@ -9,7 +9,9 @@ tags = [
   "workflow",
 ]
 categories = [
-  "productivity"
+  "Tips",
+  "Workflow",
+  "Productivity"
 ]
 +++
 
@@ -260,4 +262,3 @@ If you have any recommendations... additional steps, reordering or improvements 
 I'd love to add to this. :) Getting stuck _really sucks_. It can be soul-crushing.
 
 So. Share the love. <3
-

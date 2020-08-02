@@ -21,6 +21,8 @@ Instead, set up a "viewer protocol policy" on the caching behaviour of your AWS 
 viewer_protocol_policy = "redirect-to-https"
 ```
 
+<!--more-->
+
 In context:
 
 ```hcl

@@ -19,6 +19,8 @@ If you work with AWS and Terraform regularly, surely you'll be familiar with the
 
 A simple trick applied to your `aws_cloudfront_distribution` resource should do the trick!
 
+<!--more-->
+
 ```hcl
 resource "aws_cloudfront_distribution" "main" {
   wait_for_deployment = false

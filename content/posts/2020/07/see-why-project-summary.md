@@ -1,5 +1,5 @@
 +++
-title = "July 13th 2020 - Stream Summary"
+title = "Project: See Why"
 description = "Developing a productivity application using Electron, Typescript and VueJS"
 date = "2020-07-13"
 tags = [
@@ -11,6 +11,7 @@ tags = [
 ]
 categories = [
   "Streams",
+  "Projects",
 ]
 +++
 
@@ -19,9 +20,9 @@ categories = [
 Today we started development on a productivity tool called __SeeWhy__.
 It's an integrated markdown editor, file browser and automation tool.
 
-[__Come and enjoy the stream live!__](https://twitch.tv/comyune) 
+[__Come and enjoy the stream live!__](https://twitch.tv/sebthecat_com) 
 
-Or you can check out our [past videos here](https://www.twitch.tv/comyune/videos).
+Or you can check out our [past videos here](https://www.twitch.tv/sebthecat_com/videos).
 
 
 ## Source Code {{% fontawesome github %}}
@@ -32,7 +33,6 @@ The boilerplate repository we put together yesterday is available on __Github.co
 [__{{% fontawesome github %}} Comyune/electron-typescript-vue-boilerplate__](https://github.com/Comyune/electron-typescript-vue-boilerplate)
 
 <!--more-->
-
 
 ## Overview
 

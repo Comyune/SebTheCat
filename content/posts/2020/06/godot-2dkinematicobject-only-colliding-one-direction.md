@@ -16,6 +16,8 @@ Had an issue where my `KinematicBody2D` would only collide with `StaticBody2D`s 
 Tried switching one-way collisions on and off. Nothing.
 Tried changing collision shape to concave. Nothing.
 
+<!--more-->
+
 I was an idiot and had my collision logic doing the following:
 
 ```gdscript
