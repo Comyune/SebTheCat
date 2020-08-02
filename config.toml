@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Seb The Cat"
 theme = "bootstrap4"
 paginate = 10
-summaryLength = 500
+summaryLength = 100
 uglyurls = true
 copyright = "&copy; Copyright Comyune Technologies Ltd, 2020"
 googleAnalytics = "UA-168657035-1"
@@ -25,16 +25,24 @@ weight = 10
   page = "/:slug/"
 
 [[menu.sidebar]]
-  name = "DevBrett"
+  name = "Portfolio"
   url = "https://devbrett.com"
+  weight = 9
+
+[[menu.sidebar]]
+  name = "Twitter"
+  url = "https://twitter.com/_SebTheCat_"
+  weight = 1
 
 [[menu.sidebar]]
   name = "Youtube"
   url = "https://www.youtube.com/channel/UCVQ2Rt-GlX3ptQ94GUtulmQ"
+  weight = 1
 
 [[menu.sidebar]]
   name = "Twitch"
   url = "https://twitch.tv/sebthecat_com"
+  weight = 2
 
 [[menu.navbar]]
   name = "Youtube"
@@ -43,6 +51,10 @@ weight = 10
 [[menu.navbar]]
   name = "Twitch"
   url = "https://twitch.tv/sebthecat_com"
+
+[[menu.navbar]]
+  name = "Twitter"
+  url = "https://twitter.com/_SebTheCat_"
 
 # Theme variables
 [params]
