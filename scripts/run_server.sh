@@ -2,8 +2,9 @@
 
 hugo serve \
   --noHTTPCache \
-  --gc \
+  --disableFastRender \
   --debug \
   --log \
   --verbose \
-  --verboseLog
+  --verboseLog \
+  --navigateToChanged
