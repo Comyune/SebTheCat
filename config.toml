@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Seb The Cat"
 theme = "bootstrap4"
 paginate = 10
-summaryLength = 50
+summaryLength = 500
 uglyurls = true
 copyright = "&copy; Copyright Comyune Technologies Ltd, 2020"
 googleAnalytics = "UA-168657035-1"
@@ -65,7 +65,7 @@ weight = 10
   sharingicons = false # true
 
   # Display post summaries instead of content in list templates (default: true)
-  truncate = false
+  truncate = true
 
   # Disable the use of sub-resource integrity on CSS/JS assets (default: false)
   # Useful if you're using a CDN or other host where you can't control cache headers
