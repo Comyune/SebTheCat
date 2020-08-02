@@ -1,7 +1,11 @@
 {{ if (ne .Site.Params.header_visible false) }}
-  <header class="blog-header">
+  <header class="blog-header article-header">
     <div class="container">
       <div class="row">
+        <div class="col-sm-2">
+          <img src="/icon-large.png" />
+        </div>
+
         <div class="col-sm-7">
           <h1 class="blog-title small" dir="auto">
             <a href="{{ .Site.BaseURL | absURL }}" rel="home">
@@ -25,10 +29,6 @@
               {{ partial "meta-terms.html" . }}
             {{ end }}
           </p>
-        </div>
-
-        <div class="col-sm-5">
-          {{ partial "embedded-twitch.html" . }}
         </div>
       </div>
     </div>
