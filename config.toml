@@ -59,7 +59,7 @@ weight = 10
 # Theme variables
 [params]
   author = "Seb The Cat"
-  description = "A blog chronicling Seb's journey in development for pawsterity."
+  description = "A blog chronicling Seb's journey in development for pawsterity.<br /> No ads. No pop-ups. No bullshit. Just cool tech and free tutorials."
   header_visible = true
   date_format = "Mon Jan 02, 2006"
   #google_verify_meta = "BAi57DROASu4b2mkVNA_EyUsobfA7Mq8BmSg7Rn-Zp9"
