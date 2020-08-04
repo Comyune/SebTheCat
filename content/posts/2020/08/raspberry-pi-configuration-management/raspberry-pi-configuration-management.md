@@ -14,10 +14,7 @@ In this post we will be looking at setting up our Raspberry Pi in an automated f
 ## Purchasing a Raspberry Pi
 
 <a target="_blank"  href="https://www.amazon.co.uk/gp/product/B07XH3HWTQ/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=B07XH3HWTQ&linkCode=as2&tag=comyune-21&linkId=dbab78fff3656df9f3a66937af6c8e38">
-
 I recommend the __Canakit Raspberry Pi 4 4Gb Starter Kit__.
-
-<img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=GB&ASIN=B07XH3HWTQ&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=comyune-21" >
 </a>
 
 It contains everything you need to get a complete setup going quickly, and it is available for a _very_ reasonable price.
