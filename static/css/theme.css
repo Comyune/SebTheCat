@@ -281,6 +281,12 @@ article blockquote:after {
   text-align: right;
 }
 
+figure img { margin-bottom: 0; }
+figcaption {
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
 /*
 I'm willing to risk a lawsuit, because these things
 are annoying as hell and are breaking the whole
