@@ -38,9 +38,9 @@ resource "aws_cloudfront_distribution" "sebthecat_blog" {
     target_origin_id = local.s3_blog_origin_id
     viewer_protocol_policy = "redirect-to-https"
     compress = true
-    min_ttl = 60
-    default_ttl = 3600
-    max_ttl = 86400
+    min_ttl = 60 // 1 minute
+    default_ttl = 3600 // 1 hour
+    max_ttl = 86400 // 1 day
 
     forwarded_values {
       query_string = false

@@ -10,7 +10,7 @@ resource "aws_s3_bucket" "sebthecat_blog" {
   cors_rule {
     allowed_headers = ["*"]
     allowed_methods = ["GET"]
-    allowed_origins = ["https://sebthecat.com"]
+    allowed_origins = ["*.sebthecat.com"]
     expose_headers  = ["ETag"]
     max_age_seconds = 3600 // 1 hour
   }
@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "sebthecat_blog" {
   cors_rule {
     allowed_headers = ["*"]
     allowed_methods = ["GET"]
-    allowed_origins = ["https://www.sebthecat.com"]
+    allowed_origins = ["https://sebthecat.com"]
     expose_headers  = ["ETag"]
     max_age_seconds = 3600 // 1 hour
   }
