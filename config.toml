@@ -56,6 +56,10 @@ weight = 10
   name = "Twitter"
   url = "https://twitter.com/_SebTheCat_"
 
+[[menu.navbar]]
+  name = "Discord"
+  url = "https://discord.gg/K8chdpq"
+
 # Theme variables
 [params]
   author = "Seb The Cat"
