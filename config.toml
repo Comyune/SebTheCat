@@ -1,7 +1,7 @@
 baseURL = "https://sebthecat.com/"
 languageCode = "en-us"
 title = "Seb The Cat"
-theme = "bootstrap4"
+theme = "sebthecat-blog"
 paginate = 10
 summaryLength = 100
 uglyurls = true
