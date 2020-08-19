@@ -2,9 +2,15 @@
 
 hugo serve \
   --disableFastRender \
-  --baseURL "http://192.168.0.203:1313" \
+  --debug \
   --log \
   --verbose \
   --verboseLog \
+  --path-warnings \
+  --renderToDisk \
   --navigateToChanged \
-  --bind "0.0.0.0"
+  --templateMetrics \
+  --templateMetricsHints \
+  --baseURL http://192.168.0.203:1313 \
+  --bind 0.0.0.0 \
+  --logFile tmp/log.txt
